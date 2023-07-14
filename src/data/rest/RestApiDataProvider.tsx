@@ -3,7 +3,6 @@ import { DataContext, DataProvider, ManyOptions, ResourceName } from '@/data'
 import { adminApiClient } from './adminApiClient'
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL
-const readManyEmbed = <T extends ResourceName>() => {}
 
 export const RestApiDataProvider: FC<PropsWithChildren> = ({ children, ...rest }) => {
   const provider: DataProvider = useMemo(
