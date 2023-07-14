@@ -8,7 +8,6 @@ export const useTranslate = () => {
       return options ? t<I18n, Options, I18n>(key, options) : t<I18n, Options, I18n>(key)
     },
     translateAny: (key: string, options?: Options): string => {
-      console.log(t(key))
       return options ? t(key, options) : t(key)
     },
     language: i18n.language,
